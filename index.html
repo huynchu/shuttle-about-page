@@ -47,35 +47,42 @@
       </div>
     </section>
     <section id="App-Download">
-        <div id="Download-Message">
-          <h1 style="text-align:center">Get the App</h1>
-          <p>Get shuttle tracker right on your mobile device. Help crowdsource blah blah</p>
-        </div>    
-        <div id = "wrap">
-          <div class="box">
-            <a
-              href="https://apps.apple.com/us/app/shuttle-tracker/id1583503452?itsct=apps_box_badge&amp;itscg=30200"
-              style="
-                display: inline-block;
-                overflow: hidden;
-                border-radius: 13px;
-                width: 205px;
-                height: 68px;
-                margin-top: 15px;
-              "
-              ><img
-                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1636675200&h=813ef6710e3198f136f0b71c7200df9a"
-                alt="Download on the App Store"
-                style="border-radius: 13px; width: 198px; height: 68px; margin-top: 0px;"
-            /></a>
+  
+      <div id = "wrap">
+
+        <div class = "Column-container">
+            <div id="Download-Message">
+              <h1 style="text-align:center">Get the App</h1>
+              <p>Get shuttle tracker right on your mobile device. Help crowdsource blah blah</p>
+            </div>  
+          
+          <div class = "Two-row-container">
+            <div class="box">
+              <a
+                href="https://apps.apple.com/us/app/shuttle-tracker/id1583503452?itsct=apps_box_badge&amp;itscg=30200"
+                style="
+                  display: inline-block;
+                  overflow: hidden;
+                  border-radius: 13px;
+                  width: 205px;
+                  height: 68px;
+                  margin-top: 15px;
+                "
+                ><img
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1636675200&h=813ef6710e3198f136f0b71c7200df9a"
+                  alt="Download on the App Store"
+                  style="border-radius: 13px; width: 198px; height: 68px; margin-top: 0px;"
+              /></a>
+            </div>
+            <div class="box">
+              <a href='https://play.google.com/store/apps/details?id=edu.rpi.shuttletracker&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+               
+                <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+                style="border-radius: 0px; width: 260px; height: 100px"/>
+              </a>
+            </div>
           </div>
-          <div class="box">
-            <a href='https://play.google.com/store/apps/details?id=edu.rpi.shuttletracker&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-             
-              <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-              style="border-radius: 0px; width: 260px; height: 100px"/>
-            </a>
-          </div>
+        </div>
           <img id="iosview" src="/img/iosmobile.PNG" alt="iphone-view">
           <img id="androidview" src="/img/androidview.webp" alt="android-view">
         </div>
@@ -186,7 +193,6 @@
 #App-Download #iosview {
   width: 200px;
   position: relative;
-  bottom: 150px;
   border-radius: 20px;
   left:30px;
 }
@@ -194,7 +200,6 @@
 #App-Download #androidview {
   width: 200px;
   position: relative;
-  bottom: 150px;
   border-radius: 20px;
   left:40px;
 }
@@ -205,4 +210,16 @@
   margin-left: 20%;
 }
 
+.Two-row-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: space-between;
+  align-items: center;
+}
+
+.Column-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 </style>
