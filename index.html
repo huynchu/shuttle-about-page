@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="PageStyling.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,18 +27,21 @@
       <div class="container">
         <img src="img/map.png" alt="Shuttle map" />
         <h1>Welcome to Shuttle tracker</h1>
+        <div class ="text">
         <p>
           Shuttle Tracker Lorem Ipsum is simply dummy text of the printing and
           typesetting industry. Lorem Ipsum has been the industry's standard
           dummy text ever since the 1500s, when an unknown printer took a galley
           of type and scrambled it to make a type specimen book
         </p>
+        </div>
       </div>
     </section>
 
     <section id="Crowdsource">
-      <div class="container">
+      <div id="wrap2">
         <img src="img/bus.jpg" alt="Shuttle map" width="30%" />
+        <div id="text">
         <h1>Why Crowdsource?</h1>
         <p>
           RPI bad. Student good. Phone useful. Use phone to track shuttle. Use phone location data
@@ -45,11 +49,11 @@
           o wells
         </p>
       </div>
+      </div>
     </section>
-    <section id="App-Download">
-  
-      <div id = "wrap">
 
+    <section id="App-Download">
+      <div id = "wrap">
         <div class = "Column-container">
             <div id="Download-Message">
               <h1 style="text-align:center">Get the App</h1>
@@ -89,140 +93,3 @@
     </section>
   </body>
 </html>
-
-
-<style>
- body {
-  font-family: Arial,Helvetica, sans-serif;
-  padding:0;
-  margin:0;
-  background-color: #f4f4f4;
- } 
-
- /* Global */
- .container {
-   margin: auto;
-   width: 80%;
-   overflow: hidden;
- }
-
-
- /* Header */
- header{
-   background: #EBEBEB;
-   color: #494D50;
-   padding-top: 30px;
-   min-height: 70px;
- }
- header a{
-   font-size: 20px;
-   text-decoration: none;
-   color: #494D50;
- }
-
- header ul{
-   margin:0;
-   padding:0;
- }
-
- header li{
-   float: left;
-   display: inline;
-   padding: 0 20px 0 20px;
- }
-
- header #branding{
-   float: left;
- }
-
- header #branding h1{
-   margin:0;
-   padding:0;
- }
-
- header nav{
-   float: right;
-   margin-top: 10px;
- }
-
- /* Intro */
-#About{
-  margin-top: 10px;
- }
-
- #About img{
-  width: 60%;
-  float: left;
-  padding-right: 10px;
-  min-width: 505px;
- }
-
-#Crowdsource {
-  margin-top: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #f4f4f4;
-}
-#Crowdsource img{
-  margin-right: 15px;
-  float: left;
-  width: 20%;
-}
-
-#App-Download {
-  background: #f4f4f4;
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
-
-#App-Download h1{
-  margin: 0;
-  padding: 20px 0 10px 0;
-}
-
-#App-Download #wrap {
-    display: flex;
-    justify-content: center;
-    padding: 0;  
-    flex-wrap: wrap;
-}
-
-#App-Download .box {
-  display: inline-block; 
-  padding: 0 20px 0 20px;
-}
-
-#App-Download #iosview {
-  width: 200px;
-  position: relative;
-  border-radius: 20px;
-  left:30px;
-}
-
-#App-Download #androidview {
-  width: 200px;
-  position: relative;
-  border-radius: 20px;
-  left:40px;
-}
-
-#App-Download #Download-Message {
-  text-align: center;
-  max-width: 350px;
-  margin-left: 20%;
-}
-
-.Two-row-container {
-  display: flex;
-  flex-direction: row;
-  flex-flow: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.Column-container {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-</style>
