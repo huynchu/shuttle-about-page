@@ -1,0 +1,144 @@
+ body {
+  font-family: Arial,Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color: #f4f4f4;
+ } 
+
+ /* Global */
+ .container {
+   margin: auto;
+   width: 80%;
+   overflow: hidden;
+ }
+
+ /* Header */
+ header{
+   background: #EBEBEB;
+   color: #494D50;
+   padding-top: 30px;
+   min-height: 70px;
+ }
+ header a{
+   font-size: 20px;
+   text-decoration: none;
+   color: #494D50;
+ }
+
+ header ul{
+   margin:0;
+   padding:0;
+ }
+
+ header li{
+   float: left;
+   display: inline;
+   padding: 0 20px 0 20px;
+ }
+
+ header #branding{
+   float: left;
+ }
+
+ header #branding h1{
+   margin:0;
+   padding:0;
+ }
+
+ header nav{
+   float: right;
+   margin-top: 10px;
+ }
+
+ /* Intro */
+#About{
+  margin-top: 10px;
+ }
+
+ #About img{
+  width: 60%;
+  float: left;
+  padding-right: 10px;
+  min-width: 505px;
+ }
+
+#Crowdsource {
+  justify-content: center;
+  padding: 0;
+  margin-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  left: 20px;
+  background-color: #f4f4f4;
+}
+
+#Crowdsource #wrap2 {
+  display: flex;
+  justify-content: center;
+  padding: 0;  
+}
+
+#Crowdsource img{
+  margin-right: 15px;
+  float: left;
+  width: 20%;
+}
+
+#Crowdsource #text{
+  width: 65%;
+  justify-content: center;
+}
+
+#App-Download {
+  background: #f4f4f4;
+  margin-top: 55px;
+}
+
+#App-Download h1{
+  margin: 0;
+  padding: 20px 0 10px 0;
+}
+
+#App-Download #wrap {
+    display: flex;
+    justify-content: center;
+    padding: 0;  
+}
+
+#App-Download .box {
+  display: inline-block; 
+  padding: 0 20px 0 20px;
+}
+
+#App-Download #iosview {
+  width: 200px;
+  position: relative;
+  border-radius: 20px;
+  left:30px;
+}
+
+#App-Download #androidview {
+  width: 200px;
+  position: relative;
+  border-radius: 20px;
+  left:40px;
+}
+
+#App-Download #Download-Message {
+  text-align: center;
+  max-width: 350px;
+  margin-left: 20%;
+}
+
+.Two-row-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: space-between;
+  align-items: center;
+}
+
+.Column-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
