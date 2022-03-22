@@ -61,6 +61,7 @@
   width: 60%;
   float: left;
   min-width: 505px;
+  flex-shrink: 2;
  }
 #About .Two-row-container .text{
   width: 40%;
@@ -78,7 +79,7 @@ button{
 }
 
 button a{
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
