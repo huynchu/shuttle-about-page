@@ -52,7 +52,9 @@
 
  /* Intro */
 #About{
-  margin-top: 10px;
+  padding: 0;
+  margin: 0;
+  background-color: #c8c8c8;
  }
 
  #About img{
@@ -61,7 +63,10 @@
   padding-right: 10px;
   min-width: 505px;
  }
-
+#About .Two-row-container .text{
+  width: 40%;
+  text-align: center;
+}
 #Crowdsource {
   justify-content: center;
   padding: 0;
@@ -137,7 +142,7 @@
 .Two-row-container {
   display: flex;
   flex-direction: row;
-  flex-flow: space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
