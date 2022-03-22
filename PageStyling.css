@@ -52,7 +52,9 @@
 
  /* Intro */
 #About{
-  margin-top: 10px;
+  padding: 0;
+  margin: 0;
+  background-color: #c8c8c8;
  }
 
  #About img{
@@ -61,7 +63,10 @@
   padding-right: 10px;
   min-width: 505px;
  }
-
+#About .Two-row-container .text{
+  width: 40%;
+  text-align: center;
+}
 #Crowdsource {
   justify-content: center;
   padding: 0;
@@ -76,17 +81,21 @@
   display: flex;
   justify-content: center;
   padding: 0;  
+  align-items: center;
 }
 
 #Crowdsource img{
   margin-right: 15px;
   float: left;
-  width: 20%;
+  width: 15%;
+  height: 15%;
+  min-width: 150px;
+  border-radius: 50%;
 }
 
 #Crowdsource #text{
-  width: 65%;
-  justify-content: center;
+  width: 40%;
+  text-align: center;
 }
 
 #App-Download {
@@ -133,7 +142,7 @@
 .Two-row-container {
   display: flex;
   flex-direction: row;
-  flex-flow: space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
