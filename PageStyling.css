@@ -125,8 +125,8 @@ button a{
   margin-right: auto;
   margin-left: auto;
   float: left;
-  width: 15%;
-  height: 15%;
+  width: auto;
+  height: auto;
   min-width: 150px;
   border-radius: 50%;
 
