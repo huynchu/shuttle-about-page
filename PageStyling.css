@@ -154,6 +154,10 @@ button a{
   min-height: 150px;
 }
 
+#Features #Details p{
+  padding: 0 20px;
+}
+
 #Features .Column-container {
   width: 18%;
   background-color: #d4d4d4b2;
