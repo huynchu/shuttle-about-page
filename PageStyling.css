@@ -1,100 +1,146 @@
- body {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  padding:0;
-  margin:0;
-  background-color: #f4f4f4;
- } 
-
- /* Global */
- .container {
-   margin: auto;
-   width: 80%;
-   overflow: hidden;
- }
-
- /* Header */
- header{
-   background: #EBEBEB;
-   color: #494D50;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 5%;
- }
-
- header #Branding {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
- }
- 
- header img{
-  margin: 0;
-  width: 30px;
- }
- header h1{
-   font-weight: 400;
-   font-size: 30px;
-   float: right;
- }
- header a{
-   font-size: 18px;
-   text-decoration: none;
-   color: #494D50;
- }
-
- header ul{
-   padding:0;
- }
-
- header li{
-   display: inline-block;
-   padding: 0 20px 0 20px;
- }
-
- header #branding{
-   float: left;
- }
-
- header #branding h1{
-   padding:0;
- }
-
-
- /* Intro */
-#About{
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   padding: 0;
   margin: 0;
-  background-color: #c8c8c8;
- }
+  background-color: #f4f4f4;
+}
 
- #About img{
-  width: 60%;
-  float: left;
-  min-width: 505px;
-  flex-shrink: 2;
- }
-#About .Two-row-container .text{
-  width: 40%;
-  text-align: center;
-  padding: 0 30px 0 30px;
+/* Global */
+.container {
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
 }
 
 
-button{
+/* Header */
+header {
+  background: #EBEBEB;
+  color: #494D50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+header #Branding {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 30px;
+  float: right;
+}
+
+header a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #494D50;
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+header li a {
+  transition: color 0.3s ease 0s;
+  transition: background-color 0.5s ease 0s;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+header li a:hover {
+  color: #0088a9;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  text-decoration: underline;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  padding: 0;
+}
+
+
+/* Intro */
+#About {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c8c8c8;
+  background-image: url("img/map.png");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+#About .text {
+  border-radius: 10px;
+  background-color: rgba(254, 254, 254, 0);
+  min-width: 300px;
+  width: 40%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#About p {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 10px;
+  color: rgb(255, 233, 233);
+}
+
+
+button {
   padding: 10px;
   margin-top: 10px;
   color: white;
   background-color: rgb(255, 74, 74);
   border-radius: 3px;
-  border: 0px solid #ffffff;
+  transition-duration: 0.45s;
+  border: none;
 }
 
-button a{
+button:hover {
+  background-color: rgba(255, 74, 74, 0.822);
+}
+
+button a {
   font-size: 16px;
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+  padding: 10px 20px 10px 20px;
+}
+
+button a:hover {
+  text-decoration-color: rgba(255, 255, 255, 1);
 }
 
 #Crowdsource {
@@ -110,11 +156,11 @@ button a{
 #Crowdsource #wrap2 {
   display: flex;
   justify-content: center;
-  padding: 0;  
+  padding: 0;
   align-items: center;
 }
 
-#Crowdsource img{
+#Crowdsource img {
   margin-right: 15px;
   float: left;
   width: 15%;
@@ -123,7 +169,7 @@ button a{
   border-radius: 50%;
 }
 
-#Crowdsource #text{
+#Crowdsource #text {
   width: 40%;
   text-align: center;
 }
@@ -132,29 +178,29 @@ button a{
   margin-top: 50px;
 }
 
-#Features img{
+#Features img {
   margin: auto;
   min-width: 75px;
   max-width: 75px;
 }
 
-#Features h2{
+#Features h2 {
   font-size: 20px;
 }
 
 #Features #wrap {
   display: flex;
   justify-content: center;
-  padding: 0;  
+  padding: 0;
 }
 
-#Features #Details{
+#Features #Details {
   justify-content: center;
   text-align: center;
   min-height: 150px;
 }
 
-#Features #Details p{
+#Features #Details p {
   padding: 0 20px;
 }
 
@@ -169,19 +215,19 @@ button a{
   margin-top: 55px;
 }
 
-#App-Download h1{
+#App-Download h1 {
   margin: 0;
   padding: 20px 0 10px 0;
 }
 
 #App-Download #wrap {
-    display: flex;
-    justify-content: center;
-    padding: 0;  
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 #App-Download .box {
-  display: inline-block; 
+  display: inline-block;
   padding: 0 20px 0 20px;
 }
 
@@ -189,14 +235,14 @@ button a{
   width: 200px;
   position: relative;
   border-radius: 20px;
-  left:30px;
+  left: 30px;
 }
 
 #App-Download #androidview {
   width: 200px;
   position: relative;
   border-radius: 20px;
-  left:40px;
+  left: 40px;
 }
 
 #App-Download #Download-Message {
@@ -205,12 +251,6 @@ button a{
   margin-left: 20%;
 }
 
-.Two-row-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .Column-container {
   justify-content: center;
@@ -225,6 +265,6 @@ footer {
   margin-top: 55px;
 }
 
-footer a{
+footer a {
   color: black;
 }
