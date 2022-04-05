@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -154,7 +154,7 @@ button a {
   font-weight: bold;
   text-decoration: underline 0.15em rgba(255, 255, 255, 0);
   transition: text-decoration-color 300ms;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 15px 10px 15px;
 }
 
 button a:hover {
