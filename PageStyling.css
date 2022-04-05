@@ -119,9 +119,9 @@ header #branding h1 {
 }
 
 
-button {
+#About #web-button {
   padding: 10px;
-  margin-top: 10px;
+  margin: 10px 10px 0px 0px;
   color: white;
   background-color: rgb(255, 74, 74);
   border-radius: 3px;
@@ -129,8 +129,22 @@ button {
   border: none;
 }
 
-button:hover {
+#About #app-button {
+  padding: 10px;
+  margin: 10px 0px 0px 10px;
+  color: white;
+  background-color: rgb(69, 191, 238);
+  border-radius: 3px;
+  transition-duration: 0.45s;
+  border: none;
+}
+
+#About #web-button:hover {
   background-color: rgba(255, 74, 74, 0.822);
+}
+
+#About #app-button:hover {
+  background-color: rgba(69, 191, 238, 0.822);
 }
 
 button a {
