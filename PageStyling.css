@@ -17,6 +17,14 @@ body {
 }
 
 
+#center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 /* Header */
 header {
   background: #EBEBEB;
@@ -275,6 +283,15 @@ button a:hover {
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+#Feedback {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+#fdback {
+  width: 50%;
 }
 
 /* Footer */
